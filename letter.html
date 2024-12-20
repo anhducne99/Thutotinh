@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anh Đức yêu Phương Quỳnh</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=VT323"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="letter.css" />
+  </head>
+  <body>
+    <div class="textCont"></div>
+    <div class="song">
+      <div class="title"><b>Tắt nhạc tại đây: </b></div>
+      <div class="pause" onclick="togglePlay()">🔇</div>
+      <div class="player">
+        <audio
+          class="audio"
+          src="song.mp3"
+          autoplay
+          type="audio"
+          loop=""
+        ></audio>
+      </div>
+    </div>
+    <footer>
+      <a
+        href="https://www.facebook.com/duckittyOfficial/"
+        target="Phở Bò của Anh Đức"
+        alt="Phở Bò của Anh Đức"
+        >Anh Đức yêu Phương Quỳnh💘</a
+      >
+    </footer>
+    <script src="untoldcoding.js"></script>
+    <script>
+      var pause = document.querySelector(".pause");
+      var audio = document.querySelector(".audio");
+
+      function togglePlay() {
+        if (audio.paused) {
+          audio.play();
+          pause.innerHTML = "🔇";
+        } else {
+          audio.pause();
+          pause.innerHTML = "🔊";
+          pause.style.color = " #848484";
+        }
+      }
+    </script>
+    <script src="new.js"></script>
+  </body>
+</html>
