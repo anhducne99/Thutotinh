@@ -51,7 +51,7 @@ footer {
 
 footer > a {
   background-color: transparent;
-  color: var(--font-color);
+  color: pink;
   font-weight: bold;
   font-family: "Megrim";
   font-size: 110%;
